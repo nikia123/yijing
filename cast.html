@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#b49a78">
+        <link rel="shortcut icon" href="images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#b49a78">
+        <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    
+        <!-- Google Font APIs -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+    
+        <title>Casting | Yi Jing Oracle</title>
+        <meta name="description" content="Cast a hexagram, read multiple translations and interpretations.">
+    
+        <link rel="stylesheet" href="styles/normalize-fwd.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    
+    </head>
+<body class="cast">
+    <div class="cast sitewrapper" id="sitewrapper">
+        <header class="cast header">
+            <a href="index.html"><img class="cast" src="images/header.jpg" alt="An ink drawing of a whirlpool made on parchment paper."></a>
+        </header>
+    
+        <main class="main cast">
+            <section class="cast hexagram">
+                <div  class="cast container">
+                    <img class="initial" id="line6-initial" src="" alt="">
+                    <img class="initial" id="line5-initial" src="" alt="">
+                    <img class="initial" id="line4-initial" src="" alt="">
+                    <img class="initial" id="line3-initial" src="" alt="">
+                    <img class="initial" id="line2-initial" src="" alt="">
+                    <img class="initial" id="line1-initial" src="" alt="">
+                </div>
+
+                <h2 id="question-header" class="cast header">Enter Your Question:</h2>
+                <input id="question" type="text">
+                <h2 id="question-output" class="cast question"></h2>
+
+                <button id="cast" class="cast all">Cast</button>
+
+                <div id="pre-cast">
+                    <h3 id="hexagram-initial-title" class="cast">Initial Hexagram: #
+                        <span id="initial-hexagram-num"></span>
+                    </h3>
+    
+                    <h4 class="cast">Title:
+                        <span id="initial-hexagram-title"></span>
+                    </h4>
+    
+                    <h3 class="cast">Judgment & Image:</h3>
+                    <p>Judgment: <br>
+                        <span id="initial-judgment"></span>
+                    </p>
+                    <p>Image: <br>
+                        <span id="image-text"></span>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="changing-lines" class="cast changing-lines">
+                <div class="cast changing-lines">
+
+                    <h3 class="cast">Changing Lines:</h3>
+
+                    <p id="sixth-line-parent">Sixth Line Changing: <br>
+                        <span id="sixth-line"> </span>
+                    </p>
+                    <p id="fifth-line-parent">Fifth Line Changing: <br>
+                        <span id="fifth-line"> </span>
+                    </p>
+                    <p id="fourth-line-parent">Fourth Line Changing: <br>
+                        <span id="fourth-line"> </span>
+                    </p>
+                    <p id="third-line-parent">Third Line Changing: <br>
+                        <span id="third-line"> </span>
+                    </p>
+                    <p id="second-line-parent">Second Line Changing: <br>
+                        <span id="second-line"> </span>
+                    </p>
+                    <p id="first-line-parent">First Line Changing: <br>
+                        <span id="first-line"> </span>
+                    </p>
+
+                </div>
+            </section>
+
+            <section id="final-hexagram" class="cast final-hexagram">
+                <div class="cast container final-hexagram">
+
+                    <h3 class="cast">Resulting Hexagram: # 
+                        <span id="final-hexagram-num"></span> 
+                    </h3>
+                    <h4 id="cast">Title: 
+                        <span id="final-hexagram-title"></span>
+                    </h4>
+
+                    <div class="final">
+                        <img id="final-sixth" src="" alt="">
+                        <img id="final-fifth" src="" alt="">
+                        <img id="final-fourth" src="" alt="">
+                        <img id="final-third" src="" alt="">
+                        <img id="final-second" src="" alt="">
+                        <img id="final-first" src="" alt="">
+                    </div>
+
+                    <h3 class="cast">Judgment & Image: </h3>
+                    <p class="border">Judgment: <br>
+                        <span id="final-judgment"></span>
+                    </p>
+                    <p class="border">Image: <br>
+                        <span id="final-image"></span>
+                    </p>
+            </section>
+    </div>
+
+
+    </main>
+    <footer class="cast">
+        <a id="again" class="cast again" href="cast.html">Cast Again!</a>
+        <p class="foot">For Educational Purposes Only.</p>
+        <p class="foot">© 2023 Nikia Shaw - BCIT FWD</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

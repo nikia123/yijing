@@ -1,0 +1,335 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+
+/* Typography
+--------------------------------------------- */
+body {
+    font-size: 1rem;
+    color: rgb(29, 29, 29);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+	margin: 0 auto;
+    background-color: #eee;
+    font-family: 'Bitter', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    background-color: rgb(173, 51, 51, 0.85);
+    color: rgb(218, 218, 218);
+    width: 100%;
+    max-width: fit-content;
+    padding: .25rem 1rem;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 4px;
+}
+
+p {
+	padding: 1rem 2rem;
+    margin-top: 0rem;
+    background-color: rgba(180, 154, 120, 0.90);
+    border-radius: 5px;
+}
+
+@media (min-width: 50em) {
+    p {
+        display: block;
+        width: 35rem;
+        margin: 2rem auto;
+        padding: 1rem auto;
+        border: 1px solid rgb(48, 48, 48)
+    }
+
+    span > * {
+        max-width: 31rem;
+        margin: 1rem auto;
+        border: none;
+    }
+}
+
+
+/* Elements
+--------------------------------------------- */
+ul {
+	padding: 0rem;
+}
+
+@media (min-width: 50em) {
+    img.home {
+        max-width: 35rem;
+        margin-top: 1rem;
+        border-radius: 6px;
+    }
+}
+
+
+/* Links
+--------------------------------------------- */
+.cast .again,
+a.submit, 
+.cast button,
+.cast .continue,
+a.cast.again {
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    color:rgb(218, 218, 218);
+    background-color: rgb(40, 39, 107);
+    text-decoration: none;
+    font-size: 1.15rem;
+    border: 1px solid rgb(218, 218, 218);
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+a.home.credit {
+    display: inline;
+    margin: none;
+
+}
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+
+
+
+body.home{
+    background-image: url(../images/nine-dragons-cast-mobile-complete.png);
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: top right;
+    background-color: rgba(180, 154, 120, 0.92);
+}
+
+@media (min-width: 50em) {
+    body.home {
+        background-image: url(../images/nine-dragons-index-desktop-complete.jpg), url(../images/nine-dragons-results-desktop-complete.jpg);
+        background-color: rgba(180, 154, 120, 0.92);
+        background-position: center top, center bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+        
+    }   
+}
+
+
+body.cast {
+    background-image: url(../images/nine-dragons-cast-mobile-complete.png);
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: top right;
+    background-color: rgba(180, 154, 120, 0.92);
+}
+
+@media (min-width: 50em) {
+    body.cast {
+        background-image: url(../images/nine-dragons-cast-desktop-complete.jpg), url(../images/nine-dragons-results-desktop-complete.jpg);
+        background-color: rgba(180, 154, 120, 0.92);
+        background-position: center top, center bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+        
+    }   
+}
+
+
+
+
+img {
+    margin: 0rem auto 1rem;
+    padding: 1rem;
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.cast .sitewrapper {
+    margin: 0 auto;
+    padding-top: 12rem;
+    position: relative;
+}
+
+div.home.separator {
+    border: 1rem solid rgb(29, 29, 29, .9);
+    margin-top: 2rem;
+}
+
+.header img {
+    border-radius: 1rem;
+}
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+img.cast {
+    position: relative;
+    right: 0;
+    top: 0;
+    max-width: 12rem;
+    margin: 2rem auto 3rem;
+}
+
+/* Main
+--------------------------------------------- */
+
+p.home.subtext {
+    margin-bottom: 0rem;
+}
+
+input {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgba(177, 177, 177, 0.8);
+    max-width: 20rem;
+}
+
+@media (min-width: 50em) {
+    input {
+        width: 20rem;
+    }
+}
+
+
+.initial {
+    display: block;
+}
+
+.cast .buttons {
+    display: flex;
+    margin: 1rem auto;
+    max-width: 23rem;
+}
+
+
+.cast .container img {
+    background-color: rgba(218, 218, 218, 0.9);
+    margin-bottom: 0rem;
+    padding: .5rem .25rem;
+    width: 13rem;
+}
+
+.cast .question {
+    font-size: 1.5rem;
+    background-color:rgb(218, 218, 218, .8);
+    color: black;
+}
+
+
+
+.results h4,
+.results h3,
+.results h2 {
+    margin: 1rem auto
+}
+
+/* hidden elements */
+.border,
+h3.cast > p,
+.changing-lines span > p,
+.changing-lines p,
+#final-judgment p,
+#pre-cast p,
+#image-text p,
+#final-image p {
+    border: 1px solid black;
+}
+
+
+
+/* initial hexagram image elements */
+#pre-cast,
+#line6-initial,
+#line5-initial,
+#line4-initial,
+#line3-initial,
+#line2-initial,
+#line1-initial,
+.cast .question,
+#changing-lines,
+#final-hexagram,
+#again {
+    display: none;
+}
+
+/* span elements for changing lines */
+
+#sixth-line,
+#fifth-line,
+#fourth-line,
+#third-line,
+#second-line,
+#first-line {
+    display: none;
+}
+
+/* parent p elements for changing lines */
+#sixth-line-parent,
+#fifth-line-parent,
+#fourth-line-parent,
+#third-line-parent,
+#second-line-parent,
+#first-line-parent {
+    display: none;
+}
+
+.cast .header {
+    margin-bottom: 2rem;
+}
+
+h3.cast,
+h4.cast,
+#cast {
+    margin-bottom: 1rem;
+}
+
+/* Footer
+--------------------------------------------- */
+
+/* basic info */
+
+footer.home p.foot,
+footer.cast p.foot {
+    font-size: .8rem;
+    margin: 0 auto;
+    border: none;
+    background-color:rgba(0,0,0, 0);
+    padding: 0;
+    text-align: right;
+}
